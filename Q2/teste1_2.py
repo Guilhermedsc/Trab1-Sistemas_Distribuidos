@@ -54,20 +54,20 @@ class PessoasInputStream:
 pessoas = [Pessoa("Alice", 123456789, 25), Pessoa("Bob", 987654321, 30)]
 
 # Teste utilizando a saída padrão (System.out)
-# output_stream_stdout = PessoasOutputStream(pessoas, io.BytesIO())
-# output_stream_stdout.write()
+output_stream_stdout = PessoasOutputStream(pessoas, io.BytesIO())
+output_stream_stdout.write()
 
-# # Obtendo bytes da saída
-# saida_bytes = output_stream_stdout.destino.getvalue()
+# Obtendo bytes da saída
+saida_bytes = output_stream_stdout.destino.getvalue()
 
-# # Teste utilizando a entrada padrão (System.in)
-# input_stream_stdin = PessoasInputStream(io.BytesIO(saida_bytes))
-# pessoas_lidas = input_stream_stdin.read()
+# Teste utilizando a entrada padrão (System.in)
+input_stream_stdin = PessoasInputStream(io.BytesIO(saida_bytes))
+pessoas_lidas = input_stream_stdin.read()
 
-# # Exibindo os dados lidos
-# print("Dados lidos de System.in:")
-# for pessoa in pessoas_lidas:
-#     print(f"Nome: {pessoa.nome}, CPF: {pessoa.cpf}, Idade: {pessoa.idade}")
+# Exibindo os dados lidos
+print("Dados lidos de System.in:")
+for pessoa in pessoas_lidas:
+    print(f"Nome: {pessoa.nome}, CPF: {pessoa.cpf}, Idade: {pessoa.idade}")
 
 # ---|---
 
