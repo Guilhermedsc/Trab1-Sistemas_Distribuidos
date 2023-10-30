@@ -1,5 +1,7 @@
 # Trabalho 01 - Sistemas Distribuídos
 
+# DUPLA: `Guilherme Santos` e `Carlos Samuel`
+
 ## Comunicação entre processos
 
 ### Relatório e comentários sobre os códigos
