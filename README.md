@@ -1,6 +1,6 @@
 # Trabalho 01 - Sistemas Distribuídos
 
-# DUPLA: `Guilherme Santos` e `Carlos Samuel`
+## Dupla: `Guilherme Santos` e `Carlos Samuel`
 
 ## Comunicação entre processos
 
